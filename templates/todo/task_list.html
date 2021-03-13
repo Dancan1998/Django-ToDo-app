@@ -10,6 +10,8 @@
   <tr>
     <td>{{ task.title }}</td>
     <td><a href="{% url 'todo:task-detail' task.pk %}">View</a></td>
+    <td><a href="{% url 'todo:task-update' task.pk %}">Edit</a></td>
+    <td><a href="{% url 'todo:task-delete' task.pk %}">Delete</a></td>
   </tr>
   {% empty %}
   <h3>No items in list</h3>
